@@ -3,6 +3,9 @@ const express = require('express');
 const {graphqlHTTP} = require('express-graphql');
 
 const {buildSchema} = require('graphql')
+//スーマはあくまで定義だけ
+//実際のデータ操作はしない
+
 // GraphQLスキーマ言語を記述してスキーマを構築する
 const schema = buildSchema(`
   type Query {

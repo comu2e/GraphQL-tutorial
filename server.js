@@ -27,3 +27,18 @@ app.use('/graphql',graphqlHTTP({
 
 app.listen(4000);
 console.log("Runnnig a graphQL api server at http://localhost:4000/graphql")
+
+/***起動後はhttp://localhost:4000/graphqlにアクセスして
+query {
+   hello
+
+}を実行する
+
+**/
+/***
+ {
+  "data": {
+    "hello": "Hello World!"
+  }
+}
+ **/
